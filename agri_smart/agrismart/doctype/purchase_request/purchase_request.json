@@ -11,7 +11,9 @@
   "farm",
   "requested_quantity",
   "required_by_date",
-  "status"
+  "status",
+  "auto_generated",
+  "source_transaction"
  ],
  "fields": [
   {
@@ -57,15 +59,28 @@
    "fieldtype": "Select",
    "label": "Status",
    "options": "Draft\nApproved\nOrdered"
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_generated",
+   "fieldtype": "Check",
+   "label": "Auto Generated"
+  },
+  {
+   "fieldname": "source_transaction",
+   "fieldtype": "Link",
+   "label": "Source Transaction",
+   "options": "Stock Transaction"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-10-29 11:37:30.196100",
+ "modified": "2026-10-30 13:19:37.927970",
  "modified_by": "Administrator",
  "module": "AgriSmart",
  "name": "Purchase Request",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
